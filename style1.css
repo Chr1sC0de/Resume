@@ -1,0 +1,63 @@
+.br {
+    display: block;
+    margin-bottom: 0.3em;
+}
+.title {
+    color     : black;
+    font-size : 15pt;
+    text-align: center;
+    padding   : 1cm 0.25cm 0cm 0cm;
+}
+.myinfo {
+    color     : black;
+    font-size : 10pt;
+    text-align: center;
+}
+.divider {
+    background-color: black;
+    border-top      : thin solid black;
+    width           : 85%;
+}
+
+table {
+    width          : 85%;
+    margin-left    : auto;
+    margin-right   : auto;
+}
+
+th, td {
+    text-align    : left;
+    vertical-align: 0%;
+    /* border        : 1px solid; */
+}
+
+td {
+    font-size: 11px;
+}
+
+ul {
+    margin-top: 1%;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+/* links or profile table heading*/
+.lopt {
+    width         : 25%;
+    font-size     : 15px;
+}
+/* links or profile table content*/
+.lopc {
+}
+.date {
+    width    : 25%;
+}
+.role {
+    font-size : 13px;
+}
+.location {
+    text-align: right;
+    width: 20%
+}
