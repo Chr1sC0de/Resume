@@ -1,0 +1,186 @@
+h1, h2, h3, h4, h5, p {
+    margin : 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 19;
+}
+
+h2 {
+    font-size: 14;
+}
+
+h3 {
+    font-size: 12;
+}
+
+h4 {
+    font-weight: normal;
+    font-style : italic;
+}
+
+p, td, ul, li, h4 {
+    font-size: 10.5;
+}
+
+section {
+    background-color: rgba(255, 0, 0, 0.1);
+    height          : fit-content;
+    width           : 80%;
+    margin          : 10px auto 10px auto;
+    border-top      : 2px solid black;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+}
+
+table {
+    width: 100%;
+    border: 1px dashed gray;
+}
+
+tr, td {
+    border: 2px dashed gray;
+}
+
+td {
+    width: 50%;
+}
+
+
+/* title section start */
+#section-title {
+    padding-top  : 7%;
+    border-top   : None;
+    text-align   : center;
+    margin-bottom: 1%;
+}
+#section-title h4 {
+    font-style : normal;
+    font-weight: bold;
+}
+#contact-details {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* title section start */
+/* profile section start */
+#section-profile {
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    grid-gap: 10px;
+}
+#header-profile {
+    background-color: orange;
+}
+#profile-description {
+    background-color: yellow;
+}
+/* profile section end */
+/* section-employment start */
+#section-employment {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-employment-history {
+    background-color: orange;
+}
+.employment {
+    background-color     : rgba(0, 255, 255, 0.3);
+    display              : grid;
+    /* grid-gap             : 5px; */
+    margin-top           : 5px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows   : auto auto;
+}
+.employment-title {
+    background-color: rgba(0, 150, 200, 0.3);
+    order: 2;
+}
+.employment-dates {
+    background-color: rgba(0, 100, 0, 0.3);
+    order: 1;
+}
+.employment-location {
+    background-color: rgba(0, 100, 0, 0.3);
+    text-align: right;
+    order: 3
+}
+.employment-description {
+    background-color: rgba(100, 0, 67, 0.3);
+    grid-column     : 2 / 4;
+    margin-top      : 5px;
+    order           : 4
+}
+.employment-description p {
+    margin-top: 10px;
+}
+/* section-employment end */
+/* section-education start */
+#section-education {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-education-history {
+    background-color: orange;
+}
+.education {
+    background-color     : rgba(0, 255, 255, 0.3);
+    display              : grid;
+    /* grid-gap             : 5px; */
+    margin-top           : 5px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows   : auto auto;
+}
+.education-title {
+    background-color: rgba(0, 150, 200, 0.3);
+    order: 2;
+}
+.education-dates {
+    background-color: rgba(0, 100, 0, 0.3);
+    order: 1;
+}
+.education-location {
+    background-color: rgba(0, 100, 0, 0.3);
+    text-align: right;
+    order: 3
+}
+.education-description {
+    background-color: rgba(100, 0, 67, 0.3);
+    grid-column     : 2 / 4;
+    margin-top      : 5px;
+    order           : 4
+}
+/* section-education end */
+/* skills section start */
+#section-skills {
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    grid-gap: 10px;
+}
+#header-skills {
+    background-color: orange;
+}
+#skills-description {
+    background-color: yellow;
+}
+/* skills section end */
+/* referees section start */
+#section-referees {
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    grid-gap: 10px;
+}
+#header-referees {
+    background-color: orange;
+}
+#referees-description {
+    background-color: yellow;
+}
+.referee-name {
+    font-size: 13;
+    font-weight: bold;
+}
+/* referees section end */
