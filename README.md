@@ -1,2 +1,0 @@
-# Resume
- HTML of resume
