@@ -38,12 +38,13 @@ table {
 }
 
 tr, td {
+    margin: 0;
+    padding: 0;
 }
 
 td {
     width: 50%;
 }
-
 
 /* title section start */
 #section-title {
