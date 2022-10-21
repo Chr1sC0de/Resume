@@ -164,3 +164,8 @@ td {
     font-weight: bold;
 }
 /* referees section end */
+
+a, a:hover, a:visited, a:active {
+  color: darkred;
+  text-decoration: none;
+ }
