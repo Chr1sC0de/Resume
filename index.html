@@ -53,26 +53,35 @@
                 <p>Teams: Trading Persistent and Trading Data & systems</p>
                 <ul>
                     <li> <b> Battery Bidding Performance Monitoring (WIP): </b>
-                        Assisted analysts developing battery bidding strategies by creating dashboards to monitor the
-                        performance of their machine learning models using databricks. Added automated alerts based off
-                        of generated dashboard for interested parties.
-                    </li>
-                    <li>
-                        <b> Plexos Data Extraction Enhancement: </b> Refined an Extract Transform Load (ETL)
-                        pipeline that transfers Plexos forecasts to Databricks Delta tables, incorporating a parquet
-                        conversion strategy with Polars to boost extraction speed by over 2x, reduce extract size by
-                        approximately 25x and decrease CPU usage by over 50%
+                        <ul>
+                            <li>
+                                Developed dashboards and automated alerts in Databricks for performance monitoring of
+                                machine learning based battery bidding models.
+                            </li>
+                        </ul>
 
-                        &emsp;Implemented an ingestion strategy within Databricks, which further improved ingestion time
-                        by over 4x, leading to greater efficiency in data processing.
-                    </li>
+                    <li> <b>Plexos Data Extraction Enhancement:</b> </li>
+                    <ul>
+                        <li> Refined an ETL pipeline which transferred Plexos Forecasts to Databricks Delta tables </li>
+                        <li>
+                            Improved the extract portion of the pipeline with a parquet conversion strategy using Polars
+                        </li>
+                        <li>
+                            Improved Databricks ingestion by implementing pattern globbing over many large files
+                        </li>
+                        <li>Enhancements improved the original pipeline from a 2hr30min extract+ingestion time to 30
+                            minutes</li>
+                    </ul>
 
                     <li>
                         <b>Cloud Data Program Continuation:</b>
-
-                        Persistently carried out automated business verification testing using the developed testing
-                        frameworks, during a crucial large-scale lift and shift operation, ensuring data accuracy and
-                        reliability throughout the process.
+                        <ul>
+                            <li>
+                                Persistently carried out automated BVT using developed testing framework during a
+                                crucial large-scale lift and shift operation. Ensured data
+                                accuracy and reliability throughout the process.
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -80,67 +89,68 @@
         </article>
 
         <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
             <h3 class="employment-title">Energy Graduate, Energy Australia</h3>
-            <h4 class="employment-dates">June 2022 - April 2023</h4>
+            <h4 class="employment-dates">June 2022 - March 2023</h4>
             <h4 class="employment-location"> Melbourne </h4>
             <article class="employment-description">
                 <p> Team: Pricing Analysis and Systems </p>
 
                 <ul>
                     <li> <b> AEMO Market Compensation Analysis:</b>
-                        Conducted comprehensive calculations for compensation required by AEMO due to market price caps,
-                        leading to the identification of a compensation amount of approximately $2 million.
-                    </li>
-                    <li>
-                        <b>Cloud Data Program:</b> Verified the accuracy and quality of critical business tables through
-                        user acceptance testing during migration from on-premise Oracle and Microsoft servers to a
-                        Databricks on AWS environment. <br>
+                        <ul>
+                            <li> Conducted comprehensive calculations for compensation required by AEMO due to market
+                                price caps, leading to the identification of a compensation amount of approximately $3
+                                million.
+                            </li>
+                        </ul>
 
-                        &emsp; Designed a semi-automated Python-based UAT framework that
-                        streamlined SQL query reuse across various business tables during testing stages, and enabled
-                        the creation of reproducible documentation for each test case, saving up to an hour of retesting
-                        time per table for hundreds of tables.
                     </li>
                     <li>
-                        <b>Tableau Dashboard Development:</b> Created Tableau dashboards to monitor updates and
-                        discrepancies within key business tables, enhancing data transparency and decision-making.
+                        <b>Cloud Data Program:</b>
+                        <ul>
+                            <li>
+                                Verified accuracy and quality of critical business tables through UAT during migration
+                                from on-premise Oracle and Microsoft servers to Databricks on AWS.
+                            </li>
+                            <li> Designed a semi-automated Python-based UAT framework whic streamlined SQL query reuse
+                                across the various stages of testing, and enabled the creation of reproducible
+                                documentation for each test case, saving up to an hour of retesting time per table for
+                                hundreds of tables.
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <b>Caps Book Performance Evaluation:</b> Supported the data and reporting lead in crafting
-                        queries to generate a dashboard that compared the performance of manual trades against an
-                        automated strategy, providing valuable insights for the team.
+                        <b>Tableau Dashboard Development:</b>
+                        <ul>
+                            <li> Created Tableau dashboards to monitor updates and discrepancies within key business
+                                tables, enhancing data transparency and decision-making.
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <b>CorvU Migration Support:</b> Formulated SQL queries for the analytics team to facilitate the
-                        transition of various reports from external software to in-house databases and Tableau
-                        services, ensuring seamless integration and improved data access.
+                        <b>Caps Book Performance Evaluation:</b>
+                        <ul>
+                            <li>Supported the data and reporting lead in crafting queries to generate a dashboard that
+                                compared the performance of manual trades against an automated strategy, providing
+                                valuable insights for the team.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>CorvU Migration Support:</b>
+                        <ul>
+                            <li>
+                                Formulated SQL queries for the analytics team to facilitate the
+                                transition of various reports from external software to in-house databases and Tableau
+                                services, ensuring seamless integration and improved data access.
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
             </article>
         </article>
 
-        <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="employment-title">Technology Associate, Infosys</h3>
-            <h4 class="employment-dates">Dec 2021 - May 2022</h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-                <p>Data Analytics Stream, hands-on training for:</p>
-                <ul>
-                    <li>Database Development and Administration: Oracle, Microsoft SQL Server</li>
-                    <li>Java</li>
-                    <li>Microsoft SQL Server Analysis Services</li>
-                    <li>Power BI</li>
-                    <li>CI/CD</li>
-                    <li>Database Administration: Siebel CRM</li>
-                    <li>Agile Methods</li>
-                </ul>
-            </article>
-        </article>
         <!-- start listing employment, replace with js when learned -->
         <article class="employment">
             <!-- I have used the order property to ensure the correct grid
@@ -198,16 +208,13 @@
             <article class="employment-description">
                 <p>
                     Performed analysis of fluid flow for various blockage ratios
-                    for studies on future submarines.
-                </p>
+                    for studies on future submarines, for the following published piece:
                 <ul>
                     <li>
-                        Mesh generation and analysis
-                    </li>
-                    <li>
-                        CFD simulations in OpenFOAM
+                        "Some new characteristics of the confined flow over circular cylinders at low Reynolds numbers"
                     </li>
                 </ul>
+                </p>
             </article>
         </article>
         <!--  -->
