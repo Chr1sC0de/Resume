@@ -1,502 +1,592 @@
 <html lang="en">
+  <link rel="stylesheet" href="page.css" />
+  <link rel="stylesheet" href="pdf_style_1.css" />
 
-<link rel="stylesheet" href="page.css">
-<link rel="stylesheet" href="pdf_style_1.css">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Mamon</title>
-</head>
+  </head>
 
-<page size="A4">
+  <page size="A4">
     <section id="section-title">
-        <h1 id="name"> Chris Mamon </h1>
-        <h4 id="contact-details">
-            Melbourne, Australia, +61413016929,
-            chrisam1993@live.com
-        </h4>
-        <h4 id="github-link">
-            GitHub: <a href="https://github.com/Chr1sC0de/">https://github.com/Chr1sC0de/</a>,
-            Resume: <a href="https://chr1sc0de.github.io/Resume/">https://chr1sc0de.github.io/Resume/</a>,
-        </h4>
+      <h1 id="name">Chris Mamon</h1>
+      <h4 id="contact-details">
+        Melbourne, Australia, +61413016929, chrisam1993@live.com
+      </h4>
+      <h4 id="github-link">
+        GitHub:
+        <a href="https://github.com/Chr1sC0de/">https://github.com/Chr1sC0de/</a
+        >, Resume:
+        <a href="https://chr1sc0de.github.io/Resume/"
+          >https://chr1sc0de.github.io/Resume/</a
+        >,
+      </h4>
     </section>
 
-    <section id="section-profile" style="grid-template-columns: 23fr 77fr;">
-        <header id="header-profile">
-            <h2> Profile </h2>
-        </header>
-        <article id="profile-description">
-            <p>
-                Data professional with solid understanding and proficiency
-                with platforms for effective data analysis/engineering. Research
-                background in computational fluid dynamics with strong
-                mathematical, communication, organizational and analytical
-                skills with extensive programming experience for scientific
-                research using various programming languages.
-            </p>
-        </article>
+    <section id="section-profile" style="grid-template-columns: 23fr 77fr">
+      <header id="header-profile">
+        <h2>Profile</h2>
+      </header>
+      <article id="profile-description">
+        <p>
+          Data professional with solid understanding and proficiency with
+          platforms for effective data analysis/engineering. Research background
+          in computational fluid dynamics with strong mathematical,
+          communication, organizational and analytical skills with extensive
+          programming experience for scientific research using various
+          programming languages.
+        </p>
+      </article>
     </section>
 
     <section id="section-employment">
-        <header id="header-employment-history">
-            <h2>Employment</h2>
-        </header>
+      <header id="header-employment-history">
+        <h2>Employment</h2>
+      </header>
 
-        <article class="employment">
-            <h3 class="employment-title">Junior Market Analyst, Energy Australia</h3>
-            <h4 class="employment-dates">April 2023 - Current</h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-
-                <p>Teams: Trading Persistent and Trading Data & Systems</p>
-                <ul>
-                    <li> <b> Battery Bidding Performance Monitoring: </b>
-                        <ul>
-                            <li>
-                                Developed dashboards and automated alerts in Databricks for performance monitoring of
-                                machine learning based battery bidding models.
-                            </li>
-                            <li>
-                                Identified errors in calculated inputs to ML model, allowing for correction in future
-                                sprints.
-                            </li>
-                        </ul>
-
-                    <li> <b>Plexos Data Extraction Enhancement:</b> </li>
-                    <ul>
-                        <li> Refined an ETL pipeline which transferred Plexos Forecasts to Databricks Delta tables </li>
-                        <li>
-                            Improved the extract portion of the pipeline with a parquet conversion strategy using Polars
-                        </li>
-                        <li>
-                            Improved Databricks ingestion by implementing pattern globbing over many large files
-                        </li>
-                        <li>Enhancements improved the original pipeline from a 2hr30min extract+ingestion time to 30
-                            minutes
-                        </li>
-                        <li>
-                            Successful deployment of this system was adopted by business analysts, enhancing efficiency
-                            and data-driven decision making which required plexos forecasting.
-                        </li>
-                    </ul>
-
-                    <li>
-                        <b>Cloud Data Program Continuation:</b>
-                        <ul>
-                            <li>
-                                Persistently carried out automated BVT using developed testing framework during a
-                                crucial large-scale lift and shift operation. Ensured data
-                                accuracy and reliability throughout the process.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </article>
-        </article>
-
-        <article class="employment">
-            <h3 class="employment-title">Energy Graduate, Energy Australia</h3>
-            <h4 class="employment-dates">June 2022 - March 2023</h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-                <p> Team: Pricing Analysis and Systems </p>
-
-                <ul>
-                    <li> <b> AEMO Market Compensation Analysis:</b>
-                        <ul>
-                            <li> Conducted comprehensive calculations for compensation required by AEMO due to market
-                                price caps, leading to the identification of a compensation amount of approximately $3
-                                million.
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li>
-                        <b>Cloud Data Program:</b>
-                        <ul>
-                            <li>
-                                Verified accuracy and quality of critical business tables through UAT during migration
-                                from on-premise Oracle and Microsoft servers to Databricks on AWS.
-                            </li>
-                            <li> Designed a semi-automated Python-based UAT framework whic streamlined SQL query reuse
-                                across the various stages of testing, and enabled the creation of reproducible
-                                documentation for each test case, saving up to an hour of retesting time per table for
-                                hundreds of tables.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Tableau Dashboard Development:</b>
-                        <ul>
-                            <li> Created Tableau dashboards to monitor updates and discrepancies within key business
-                                tables, enhancing data transparency and decision-making.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Caps Book Performance Evaluation:</b>
-                        <ul>
-                            <li>Supported the data and reporting lead in crafting queries to generate a dashboard that
-                                compared the performance of manual trades against an automated strategy, providing
-                                valuable insights for the team.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>CorvU Migration Support:</b>
-                        <ul>
-                            <li>
-                                Formulated SQL queries for the analytics team to facilitate the
-                                transition of various reports from external software to in-house databases and Tableau
-                                services, ensuring seamless integration and improved data access.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </article>
-        </article>
-
-        <!-- start listing employment, replace with js when learned -->
-        <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="employment-title"> Research Assistant, The University of Melbourne </h3>
-            <h4 class="employment-dates"> Jan 2018 — Jan 2021 </h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-                <ul>
-                    <li>
-                        Developed and documented scientific code for research
-                        application in C++ and Python for numerical modeling,
-                        data visualization and statistical analysis for publications
-                    </li>
-                    <li>Co-author for peer reviewed journal papers, found in <b>Publications</b> </li>
-                </ul>
-            </article>
-        </article>
-    </section>
-</page>
-
-<page size="A4">
-
-    <section style="grid-template-columns: 23fr 77fr;border: none;padding-top: 50px;padding-bottom: 10px;">
-
-        <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="employment-title">Tutor and Mentor, The University of Melbourne</h3>
-            <h4 class="employment-dates"> Oct 2018 — Oct 2019 </h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-                <ul>
-                    <li>
-                        Held tutorial classes comprising of upwards of 15-30
-                        students, teaching Fluid Dynamics (MCEN90008)
-                    </li>
-                    <li>
-                        Mentor for final year capstone students for blood
-                        flow research projects, average H1 final year
-                        project
-                    </li>
-                </ul>
-            </article>
-        </article>
-
-        <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="employment-title">
-                Graduate CFD Engineer, Defence Science and Technology Group
-            </h3>
-            <h4 class="employment-dates"> Jul 2017 — Jan 2018 </h4>
-            <h4 class="employment-location"> Melbourne </h4>
-            <article class="employment-description">
-                <p>
-                    Performed analysis of fluid flow for various blockage ratios
-                    for studies on future submarines, for the following published piece:
-                <ul>
-                    <li>
-                        "Some new characteristics of the confined flow over circular cylinders at low Reynolds numbers"
-                    </li>
-                </ul>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="employment">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="employment-title">
-                Operations Officer, The Australia Taxation Office
-            </h3>
-            <h4 class="employment-dates"> Jun 2013 — Jan 2016 </h4>
-            <h4 class="employment-location">Melbourne</h4>
-            <article class="employment-description">
-                <p>
-                    Operations Officer within the Tax Department of the
-                    Australian Federal Government for the following business
-                    lines:
-                </p>
-                <ul>
-                    <li> Business Reporting and Registration </li>
-                    <li> Customer Service and Solutions (CS&S) </li>
-                    <li> Client Account Services (CAS) </li>
-                    <li> Debt </li>
-                    <li> Operations Support and Capability (OS&C) </li>
-                </ul>
-                <p>
-                    Maintained and updated customer data using various Oracle
-                    Financial Applications (Siebel CRM) and provided customer
-                    support for tax remittance, super annuation and MyGov
-                    applications.
-                </p>
-            </article>
-        </article>
-    </section>
-
-    <section id="section-education">
-        <header id="header-education-history">
-            <h2>Education</h2>
-        </header>
-        <!-- start listing education, replace with js when learned -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">Masters of Enginering (With Distinction), Mechanical
-                Specialization, The University of Melbourne</h3>
-            <h4 class="education-dates">Jan 2015 — Jul 2017 </h4>
-            <h4 class="education-location">Melbourne</h4>
-            <article class="education-description">
-                <ul>
-                    <li>WAM: 77.182 </li>
-                    <li>MCEN90022 Capstone Project 094 H1 </li>
-                    <li><b>Conference Paper:</b> Effect of Medical Imaging
-                        Modalities on the simulated blood flow through a 3D
-                        reconstructed stented coronary artery segment</li>
-                    <li><b>Academic Transcript:</b> <a
-                            href="https://www.myequals.net/sharelink/39bf60f2-2f95-49f6-9c2f-03867a939c90/4a5a7492-b23c-4e9e-87b3-d58a3a20dd87">https://www.myequals.net/sharelink/39bf60f2-2f95-49f6-9c2f-03867a939c90/4a5a7492-b23c-4e9e-87b3-d58a3a20dd87</a>
-                    </li>
-                </ul>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">Bachelor of Science, The University of Melbourne</h3>
-            <h4 class="education-dates">Jan 2012 — Dec 2014</h4>
-            <h4 class="education-location">Melbourne</h4>
-            <article class="education-description">
-            </article>
-        </article>
-    </section>
-    <section id="section-education">
-        <header id="header-education-history">
-            <h2>Courses/Certificates</h2>
-        </header>
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">
-                Data Engineering, IBM on Coursera
-            </h3>
-            <h4 class="education-dates">Jul 2022</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://coursera.org/share/e7c8acd9ef97ec13153d23b97eb3ae3d">https://coursera.org/share/e7c8acd9ef97ec13153d23b97eb3ae3d</a>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">
-                PostgreSQL for Everybody, University
-                of Michigan on Coursera
-            </h3>
-            <h4 class="education-dates">Dec 2021</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://coursera.org/share/a9b1cae25a73e890d4bf699594b8171b">https://coursera.org/share/a9b1cae25a73e890d4bf699594b8171b</a>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">AWS Cloud Technical Essentials, AWS on Coursera</h3>
-            <h4 class="education-dates">Nov 2021</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://coursera.org/share/5eeef59e6fec2ea34ab6729866b8c30a">https://coursera.org/share/5eeef59e6fec2ea34ab6729866b8c30a</a>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">Applied Data Science with Python, University of Michigan on Coursera</h3>
-            <h4 class="education-dates">Oct 2021</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://www.coursera.org/account/accomplishments/specialization/certificate/XCXYLXJZ4CHS">https://www.coursera.org/account/accomplishments/specialization/certificate/XCXYLXJZ4CHS</a>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">Data Analytics, Google on Coursera</h3>
-            <h4 class="education-dates">Aug 2021</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://www.coursera.org/account/accomplishments/specialization/certificate/BK4XG9PK8ESF">https://www.coursera.org/account/accomplishments/specialization/certificate/BK4XG9PK8ESF</a>
-                </p>
-            </article>
-        </article>
-        <!--  -->
-        <article class="education">
-            <!-- I have used the order property to ensure the correct grid
-                positions -->
-            <h3 class="education-title">Excel Skills for Data Analytics and Visualization, Macquarie University on
-                Coursera</h3>
-            <h4 class="education-dates">Jul 2021</h4>
-            <h4 class="education-location"></h4>
-            <article class="education-description">
-                <p>
-                    Link: <a
-                        href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZDETFK6UQFGF">https://www.coursera.org/account/accomplishments/specialization/certificate/ZDETFK6UQFGF</a>
-                </p>
-            </article>
-        </article>
-        <!-- end listing education, replace with js when learned -->
-    </section>
-
-
-</page>
-
-<page size="A4" style="margin-top: 10px;">
-    <section id="section-skills" style="grid-template-columns: 23fr 77fr;border: none;padding-top: 50px;">
-        <header id="header-skills">
-            <h2>Skills</h2>
-        </header>
-        <article id="skills-description">
-            <table>
-                <tr>
-                    <td>Apache Airflow</td>
-                    <td>Microsoft Power BI</td>
-                </tr>
-                <tr>
-                    <td>Advanced Dashboards in Excel</td>
-                    <td>Microsoft Power Query</td>
-                </tr>
-                <tr>
-                    <td>C++</td>
-                    <td>OpenFOAM</td>
-                </tr>
-                <tr>
-                    <td>Data Analysis & Data Cleansing</td>
-                    <td>Paraview</td>
-                </tr>
-                <tr>
-                    <td>DAX</td>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <td>Excel VBA</td>
-                    <td>Powershell</td>
-                </tr>
-                <tr>
-                    <td>M</td>
-                    <td>R</td>
-                </tr>
-                <tr>
-                    <td>MATLAB</td>
-                    <td>SolidWorks</td>
-                </tr>
-                <tr>
-                    <td>Microsoft Office</td>
-                    <td>Tableau</td>
-                </tr>
-                <tr>
-                    <td>RDBMS: Postgres, Oracle, MSSQL</td>
-                    <td>AWS - Databricks</td>
-                </tr>
-            </table>
-        </article>
-    </section>
-
-    <section id="section-referees" style="grid-template-columns: 23fr 77fr;">
-        <header id="header-referees">
-            <h2> Publications</h2>
-        </header>
-        <article id="referee-table">
-            <p> Articles: <a
-                    href="https://1drv.ms/u/s!AqKmu53lUHwmiphhitj54APJmTTs7A?e=oJdxgG">https://1drv.ms/u/s!AqKmu53lUHwmiphhitj54APJmTTs7A?e=oJdxgG</a>
-            </p>
+      <article class="employment">
+        <h3 class="employment-title">
+          Junior Market Analyst, Energy Australia
+        </h3>
+        <h4 class="employment-dates">April 2023 - Current</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <p>Teams: Trading Persistent and Trading Data & Systems</p>
+          <ul>
+            <li><b> Databricks Data Engineering </b></li>
             <ul>
-                <li>
-                    <p>
-                        "Computational fluid dynamics comparisons of wall shear stress in patient-specific coronary
-                        artery bifurcation using coronary angiography and optical coherence tomography", APS Division of
-                        Fluid Dynamics, August 2016
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        "Effect of Medical Imaging Modalities on the simulated blood flow through a 3D reconstructed
-                        stented coronary artery segment", 20th Australasian Fluid Mechanics Conference Perth, December
-                        2016
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        "Some new characteristics of the confined flow over circular cylinders at low Reynolds numbers",
-                        International Journal of Heat and Fluid Flow, December 2020
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        "High Spatial Endothelial Shear Stress Gradient Independently Predicts Site of Acute Coronary
-                        Plaque Rupture and Erosion", Journal of Cardiovascular Research, July 2021
-                    </p>
-
-                </li>
-                <li>
-                    <p>
-                        "High Endothelial Shear Stress and Stress Gradient at Plaque Erosion Persist up to 12 Months",
-                        International Journal of Cardiology, June 2022
-                    </p>
-                </li>
+              <li>
+                Developed comprehensive mock data for general tables, leveraging
+                TypeScript and the Databricks API for an efficient data
+                simulation for Battery Bidding.
+              </li>
+              <li>
+                Orchestrated and deployed Azure DevOps pipelines, ensuring
+                seamless integration and continuous delivery for required Python
+                libraries on Databricks for the Battery Bidding ETL pipeline.
+              </li>
+              <li>
+                Successfully modeled and established database tables tailored
+                for the Plexos Data Extract Project, enhancing system
+                flexibility and scalability.
+              </li>
             </ul>
+            <li>
+              <b> Battery Bidding Performance Monitoring and Testing: </b>
+            </li>
+            <ul>
+              <li>
+                Developed dashboards and automated alerts in Databricks for
+                performance monitoring of machine learning based battery bidding
+                models.
+              </li>
+              <li>
+                Identified errors in calculated inputs to ML model, allowing for
+                correction in future sprints.
+              </li>
+              <li>
+                Providing support for developers via user acceptance testing
+              </li>
+            </ul>
+
+            <li><b>Plexos Data Extraction Enhancement:</b></li>
+            <ul>
+              <li>
+                Refined an ETL pipeline which transferred Plexos Forecasts to
+                Databricks Delta tables
+              </li>
+              <li>
+                Improved the extract portion of the pipeline with a parquet
+                conversion strategy using Polars
+              </li>
+              <li>
+                Improved Databricks ingestion by implementing pattern globbing
+                over many large files
+              </li>
+              <li>
+                Enhancements improved the original pipeline from a 2hr30min
+                extract+ingestion time to 30 minutes
+              </li>
+              <li>
+                Successful deployment of this system was adopted by business
+                analysts, enhancing efficiency and data-driven decision making
+                which required plexos forecasting.
+              </li>
+              <li>Created user documentation in Confluence</li>
+            </ul>
+
+            <li><b>Cloud Data Program Continuation:</b></li>
+            <ul>
+              <li>
+                Persistently carried out automated BVT using developed testing
+                framework during a crucial large-scale lift and shift operation.
+                Ensured data accuracy and reliability throughout the process.
+              </li>
+            </ul>
+          </ul>
         </article>
+      </article>
+
+      <article class="employment">
+        <h3 class="employment-title">Energy Graduate, Energy Australia</h3>
+        <h4 class="employment-dates">June 2022 - March 2023</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <p>Team: Pricing Analysis and Systems</p>
+
+          <ul>
+            <li>
+              <b> AEMO Market Compensation Analysis:</b>
+              <ul>
+                <li>
+                  Conducted comprehensive calculations for compensation required
+                  by AEMO due to market price caps, leading to the
+                  identification of a compensation amount of approximately $3
+                  million.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Cloud Data Program:</b>
+              <ul>
+                <li>
+                  Verified accuracy and quality of critical business tables
+                  through UAT during migration from on-premise Oracle and
+                  Microsoft servers to Databricks on AWS.
+                </li>
+                <li>
+                  Designed a semi-automated Python-based UAT framework whic
+                  streamlined SQL query reuse across the various stages of
+                  testing, and enabled the creation of reproducible
+                  documentation for each test case, saving up to an hour of
+                  retesting time per table for hundreds of tables.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Tableau Dashboard Development:</b>
+              <ul>
+                <li>
+                  Created Tableau dashboards to monitor updates and
+                  discrepancies within key business tables, enhancing data
+                  transparency and decision-making.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Caps Book Performance Evaluation:</b>
+              <ul>
+                <li>
+                  Supported the data and reporting lead in crafting queries to
+                  generate a dashboard that compared the performance of manual
+                  trades against an automated strategy, providing valuable
+                  insights for the team.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>CorvU Migration Support:</b>
+              <ul>
+                <li>
+                  Formulated SQL queries for the analytics team to facilitate
+                  the transition of various reports from external software to
+                  in-house databases and Tableau services, ensuring seamless
+                  integration and improved data access.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </article>
     </section>
 
-    <section id="section-referees" style="grid-template-columns: 23fr 77fr;">
-        <header id="header-referees">
-            <h2>Referees</h2>
-        </header>
-        <article id="referee-table">
-            <p>Provided Upon Request </p>
-            <!-- <table>
+  </page>
+
+  <page size="A4">
+    <section
+      style="
+        grid-template-columns: 23fr 77fr;
+        border: none;
+        padding-top: 50px;
+        padding-bottom: 10px;
+      "
+    >
+
+
+      <!-- start listing employment, replace with js when learned -->
+      <article class="employment">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Research Assistant, The University of Melbourne
+        </h3>
+        <h4 class="employment-dates">Jan 2018 — Jan 2021</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <ul>
+            <li>
+              Developed and documented scientific code for research application
+              in C++ and Python for numerical modeling, data visualization and
+              statistical analysis for publications
+            </li>
+            <li>
+              Co-author for peer reviewed journal papers, found in
+              <b>Publications</b>
+            </li>
+          </ul>
+        </article>
+      </article>
+      <article class="employment">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Tutor and Mentor, The University of Melbourne
+        </h3>
+        <h4 class="employment-dates">Oct 2018 — Oct 2019</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <ul>
+            <li>
+              Held tutorial classes comprising of upwards of 15-30 students,
+              teaching Fluid Dynamics (MCEN90008)
+            </li>
+            <li>
+              Mentor for final year capstone students for blood flow research
+              projects, average H1 final year project
+            </li>
+          </ul>
+        </article>
+      </article>
+
+      <article class="employment">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Graduate CFD Engineer, Defence Science and Technology Group
+        </h3>
+        <h4 class="employment-dates">Jul 2017 — Jan 2018</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <p>
+            Performed analysis of fluid flow for various blockage ratios for
+            studies on future submarines, for the following published piece:
+          </p>
+          <ul>
+            <li>
+              "Some new characteristics of the confined flow over circular
+              cylinders at low Reynolds numbers"
+            </li>
+          </ul>
+        </article>
+      </article>
+      <!--  -->
+      <article class="employment">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Operations Officer, The Australia Taxation Office
+        </h3>
+        <h4 class="employment-dates">Jun 2013 — Jan 2016</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <p>
+            Operations Officer within the Tax Department of the Australian
+            Federal Government for the following business lines:
+          </p>
+          <ul>
+            <li>Business Reporting and Registration</li>
+            <li>Customer Service and Solutions (CS&S)</li>
+            <li>Client Account Services (CAS)</li>
+            <li>Debt</li>
+            <li>Operations Support and Capability (OS&C)</li>
+          </ul>
+          <p>
+            Maintained and updated customer data using various Oracle Financial
+            Applications (Siebel CRM) and provided customer support for tax
+            remittance, super annuation and MyGov applications.
+          </p>
+        </article>
+      </article>
+    </section>
+
+    <section id="section-education">
+      <header id="header-education-history">
+        <h2>Education</h2>
+      </header>
+      <!-- start listing education, replace with js when learned -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          Masters of Enginering (With Distinction), Mechanical Specialization,
+          The University of Melbourne
+        </h3>
+        <h4 class="education-dates">Jan 2015 — Jul 2017</h4>
+        <h4 class="education-location">Melbourne</h4>
+        <article class="education-description">
+          <ul>
+            <li>WAM: 77.182</li>
+            <li>MCEN90022 Capstone Project 094 H1</li>
+            <li>
+              <b>Conference Paper:</b> Effect of Medical Imaging Modalities on
+              the simulated blood flow through a 3D reconstructed stented
+              coronary artery segment
+            </li>
+            <li>
+              <b>Academic Transcript:</b>
+              <a
+                href="https://www.myequals.net/sharelink/39bf60f2-2f95-49f6-9c2f-03867a939c90/4a5a7492-b23c-4e9e-87b3-d58a3a20dd87"
+                >https://www.myequals.net/sharelink/39bf60f2-2f95-49f6-9c2f-03867a939c90/4a5a7492-b23c-4e9e-87b3-d58a3a20dd87</a
+              >
+            </li>
+          </ul>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          Bachelor of Science, The University of Melbourne
+        </h3>
+        <h4 class="education-dates">Jan 2012 — Dec 2014</h4>
+        <h4 class="education-location">Melbourne</h4>
+        <article class="education-description"></article>
+      </article>
+    </section>
+    <section id="section-education">
+      <header id="header-education-history">
+        <h2>Courses/Certificates</h2>
+      </header>
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">Data Engineering, IBM on Coursera</h3>
+        <h4 class="education-dates">Jul 2022</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://coursera.org/share/e7c8acd9ef97ec13153d23b97eb3ae3d"
+              >https://coursera.org/share/e7c8acd9ef97ec13153d23b97eb3ae3d</a
+            >
+          </p>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          PostgreSQL for Everybody, University of Michigan on Coursera
+        </h3>
+        <h4 class="education-dates">Dec 2021</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://coursera.org/share/a9b1cae25a73e890d4bf699594b8171b"
+              >https://coursera.org/share/a9b1cae25a73e890d4bf699594b8171b</a
+            >
+          </p>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          AWS Cloud Technical Essentials, AWS on Coursera
+        </h3>
+        <h4 class="education-dates">Nov 2021</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://coursera.org/share/5eeef59e6fec2ea34ab6729866b8c30a"
+              >https://coursera.org/share/5eeef59e6fec2ea34ab6729866b8c30a</a
+            >
+          </p>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          Applied Data Science with Python, University of Michigan on Coursera
+        </h3>
+        <h4 class="education-dates">Oct 2021</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/XCXYLXJZ4CHS"
+              >https://www.coursera.org/account/accomplishments/specialization/certificate/XCXYLXJZ4CHS</a
+            >
+          </p>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">Data Analytics, Google on Coursera</h3>
+        <h4 class="education-dates">Aug 2021</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/BK4XG9PK8ESF"
+              >https://www.coursera.org/account/accomplishments/specialization/certificate/BK4XG9PK8ESF</a
+            >
+          </p>
+        </article>
+      </article>
+      <!--  -->
+      <article class="education">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="education-title">
+          Excel Skills for Data Analytics and Visualization, Macquarie
+          University on Coursera
+        </h3>
+        <h4 class="education-dates">Jul 2021</h4>
+        <h4 class="education-location"></h4>
+        <article class="education-description">
+          <p>
+            Link:
+            <a
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZDETFK6UQFGF"
+              >https://www.coursera.org/account/accomplishments/specialization/certificate/ZDETFK6UQFGF</a
+            >
+          </p>
+        </article>
+      </article>
+      <!-- end listing education, replace with js when learned -->
+    </section>
+  </page>
+
+  <page size="A4" style="margin-top: 10px">
+    <section
+      id="section-skills"
+      style="grid-template-columns: 23fr 77fr; border: none; padding-top: 50px"
+    >
+      <header id="header-skills">
+        <h2>Skills</h2>
+      </header>
+      <article id="skills-description">
+        <table>
+          <tr>
+            <td>Apache Airflow</td>
+            <td>Microsoft Power BI</td>
+          </tr>
+          <tr>
+            <td>Advanced Dashboards in Excel</td>
+            <td>Microsoft Power Query</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>OpenFOAM</td>
+          </tr>
+          <tr>
+            <td>Data Analysis & Data Cleansing</td>
+            <td>Paraview</td>
+          </tr>
+          <tr>
+            <td>DAX</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Excel VBA</td>
+            <td>Powershell</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <td>MATLAB</td>
+            <td>SolidWorks</td>
+          </tr>
+          <tr>
+            <td>Microsoft Office</td>
+            <td>Tableau</td>
+          </tr>
+          <tr>
+            <td>RDBMS: Postgres, Oracle, MSSQL</td>
+            <td>AWS - Databricks</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section id="section-referees" style="grid-template-columns: 23fr 77fr">
+      <header id="header-referees">
+        <h2>Publications</h2>
+      </header>
+      <article id="referee-table">
+        <p>
+          Articles:
+          <a href="https://1drv.ms/u/s!AqKmu53lUHwmiphhitj54APJmTTs7A?e=oJdxgG"
+            >https://1drv.ms/u/s!AqKmu53lUHwmiphhitj54APJmTTs7A?e=oJdxgG</a
+          >
+        </p>
+        <ul>
+          <li>
+            <p>
+              "Computational fluid dynamics comparisons of wall shear stress in
+              patient-specific coronary artery bifurcation using coronary
+              angiography and optical coherence tomography", APS Division of
+              Fluid Dynamics, August 2016
+            </p>
+          </li>
+          <li>
+            <p>
+              "Effect of Medical Imaging Modalities on the simulated blood flow
+              through a 3D reconstructed stented coronary artery segment", 20th
+              Australasian Fluid Mechanics Conference Perth, December 2016
+            </p>
+          </li>
+          <li>
+            <p>
+              "Some new characteristics of the confined flow over circular
+              cylinders at low Reynolds numbers", International Journal of Heat
+              and Fluid Flow, December 2020
+            </p>
+          </li>
+          <li>
+            <p>
+              "High Spatial Endothelial Shear Stress Gradient Independently
+              Predicts Site of Acute Coronary Plaque Rupture and Erosion",
+              Journal of Cardiovascular Research, July 2021
+            </p>
+          </li>
+          <li>
+            <p>
+              "High Endothelial Shear Stress and Stress Gradient at Plaque
+              Erosion Persist up to 12 Months", International Journal of
+              Cardiology, June 2022
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="section-referees" style="grid-template-columns: 23fr 77fr">
+      <header id="header-referees">
+        <h2>Referees</h2>
+      </header>
+      <article id="referee-table">
+        <p>Provided Upon Request</p>
+        <!-- <table>
                     <tr><td>
                         <p class="referee-name"> Andrew Ooi<br> Professor, Department
                         of Mechanical Engineering, The
@@ -510,10 +600,7 @@
                         <p>tonyzahtila@gmail.com · +61435330783</p>
                     </td> </tr>
                 </table> -->
-        </article>
+      </article>
     </section>
-
-</page>
-</body>
-
+  </page>
 </html>
