@@ -36,14 +36,15 @@ h4 {
 
 ul {
   padding-left: 8px;
-  padding-top: 0px;
+  padding-right: 20px;
+  padding-top: 1px;
   padding-bottom: 0px;
 }
 
 section {
   height: fit-content;
-  width: 87%;
-  margin: 10px auto 10px auto;
+  width: 85%;
+  margin: 10px auto 15px auto;
   border-top: 2px solid black;
   padding-top: 5px;
   padding-bottom: 5px;
