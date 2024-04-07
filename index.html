@@ -51,28 +51,29 @@
             <ul>
               <li>
                 Automated the integration of Salesforce, SAP and IVMS data to
-                on-prem databases via scheduled python scripts.
+                Redshift on AWS via scheduled Matillion jobs.
               </li>
               <li>
-                As a result of the the integration process, uplift the
-                reconciliation of LPG stock from excel to sql queries, reducing
-                monthly reporting time by several hours.
+                Implemented a `hacky` dagster pipeline connecting RoutePlanner,
+                SharePoint, SGFleet, IVMS, SAP, Salesforce and Outlook locally
+                to allow for ad hoc reporting automation.
               </li>
-            </ul>
-            <li><b>Exception Reporting</b></li>
-            <ul>
               <li>
-                Implemented automated testing strategies on windows server,
-                which generated automated exception reports which monitored data
-                quality
+                Developed models for tracking the lineage of gas flow through
+                the various Origin LPG terminal sites to assist with stock
+                Reconciliation.
               </li>
             </ul>
-
             <li><b>Asset Performance</b></li>
             <ul>
               <li>
-                Implemented ETL pipelines for data required for tracking asset
-                utilization KPI's. Identified underutilized assets.
+                Developed dashboards combining Salesforce with IVMS data to
+                track the performance of trucks i.e. delivery to time on-road,
+                wait time etc.
+              </li>
+              <li>
+                Developed reporting for tracking driver data entry into
+                telemetry systems to callout manual input reliability issues.
               </li>
             </ul>
           </ul>
@@ -87,6 +88,7 @@
         <h4 class="employment-location">Melbourne</h4>
         <article class="employment-description">
           <p>Teams: Trading Persistent and Trading Data & Systems</p>
+
           <ul>
             <li>
               <b>Plexos Data Extract:</b>
@@ -111,11 +113,6 @@
                 Enhanced monitoring through logging and alerts via New Relic.
               </li>
               <li>
-                Facilitated the migration of data from on-premises databases to
-                the cloud, enabling real-time data access for traders and aiding
-                in view development.
-              </li>
-              <li>
                 Utilized Terraform and Azure Pipelines for automated testing and
                 deployment of infrastructure and code across multiple
                 environments (Dev/Test/Prod).
@@ -126,7 +123,8 @@
               </li>
               <li>
                 Automated testing, code coverage, and security reporting using
-                SonarQube to maintain high code quality and security standards.
+                pytest and SonarQube to maintain high code quality and security
+                standards.
               </li>
             </ul>
 
@@ -144,14 +142,14 @@
                 dataservices and integration).
               </li>
               <li>
-                Implemented Photon flag activation via terraform for Databricks
+                Implemented Photon flag activation via Terraform for Databricks
                 job deployment within AzureDevops pipelines for deployment
                 automation
               </li>
             </ul>
 
             <li>
-              <b>Cloud Data Program Continuation:</b>
+              <b>Cloud Data Program</b>
             </li>
             <ul>
               <li>
@@ -165,77 +163,74 @@
                 business continuity.
               </li>
             </ul>
+
+            <li><b> AEMO Market Compensation Analysis:</b></li>
+            <ul>
+              <li>
+                Conducted comprehensive calculations for compensation required
+                by AEMO due to market price caps, leading to the identification
+                of a compensation amount of approximately $3 million.
+              </li>
+            </ul>
+
+            <li><b>Tableau Dashboard Development:</b></li>
+            <ul>
+              <li>
+                Created Tableau dashboards to monitor updates and discrepancies
+                within key business tables, enhancing data transparency and
+                decision-making.
+              </li>
+            </ul>
+
+            <li><b>Caps Book Performance Evaluation:</b></li>
+            <ul>
+              <li>
+                Supported the data and reporting lead in crafting queries to
+                generate a dashboard that compared the performance of manual
+                trades against an automated strategy, providing valuable
+                insights for the team.
+              </li>
+            </ul>
+
+            <li><b>CorvU Migration Support:</b></li>
+            <ul>
+              <li>
+                Formulated SQL queries for the analytics team to facilitate the
+                transition of various reports from external software to in-house
+                databases and Tableau services, ensuring seamless integration
+                and improved data access.
+              </li>
+            </ul>
           </ul>
         </article>
       </article>
-
       <article class="employment">
-        <h3 class="employment-title">Energy Graduate, Energy Australia</h3>
-        <h4 class="employment-dates">June 2022 - March 2023</h4>
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Research Assistant, The University of Melbourne
+        </h3>
+        <h4 class="employment-dates">Jan 2018 — Jan 2021</h4>
         <h4 class="employment-location">Melbourne</h4>
         <article class="employment-description">
-          <p>Team: Pricing Analysis and Systems</p>
-
+          <p>Teams: Blood Flow and Deep Learning</p>
           <ul>
             <li>
-              <b> AEMO Market Compensation Analysis:</b>
-              <ul>
-                <li>
-                  Conducted comprehensive calculations for compensation required
-                  by AEMO due to market price caps, leading to the
-                  identification of a compensation amount of approximately $3
-                  million.
-                </li>
-              </ul>
+              Developed and documented scientific code for research application
+              in C++ and Python for numerical modeling, data visualization and
+              statistical analysis for publications.
             </li>
             <li>
-              <b>Cloud Data Program:</b>
-              <ul>
-                <li>
-                  Verified accuracy and quality of critical business tables
-                  through UAT during migration from on-premise Oracle and
-                  Microsoft servers to Databricks on AWS.
-                </li>
-                <li>
-                  Designed a semi-automated Python-based UAT framework whic
-                  streamlined SQL query reuse across the various stages of
-                  testing, and enabled the creation of reproducible
-                  documentation for each test case, saving up to an hour of
-                  retesting time per table for hundreds of tables.
-                </li>
-              </ul>
+              Implemented Computational Fluid Dynamics simulations using high
+              performance computing systems.
             </li>
             <li>
-              <b>Tableau Dashboard Development:</b>
-              <ul>
-                <li>
-                  Created Tableau dashboards to monitor updates and
-                  discrepancies within key business tables, enhancing data
-                  transparency and decision-making.
-                </li>
-              </ul>
+              Trialed the application of Convolutional Neural Networks for the
+              automation of OCT image segmentation and shear stress prediction.
             </li>
             <li>
-              <b>Caps Book Performance Evaluation:</b>
-              <ul>
-                <li>
-                  Supported the data and reporting lead in crafting queries to
-                  generate a dashboard that compared the performance of manual
-                  trades against an automated strategy, providing valuable
-                  insights for the team.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <b>CorvU Migration Support:</b>
-              <ul>
-                <li>
-                  Formulated SQL queries for the analytics team to facilitate
-                  the transition of various reports from external software to
-                  in-house databases and Tableau services, ensuring seamless
-                  integration and improved data access.
-                </li>
-              </ul>
+              Co-author for peer reviewed journal papers, found in
+              <b>Publications</b>.
             </li>
           </ul>
         </article>
@@ -253,71 +248,6 @@
       "
     >
       <!-- start listing employment, replace with js when learned -->
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          Research Assistant, The University of Melbourne
-        </h3>
-        <h4 class="employment-dates">Jan 2018 — Jan 2021</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <ul>
-            <li>
-              Developed and documented scientific code for research application
-              in C++ and Python for numerical modeling, data visualization and
-              statistical analysis for publications.
-            </li>
-            <li>
-              Co-author for peer reviewed journal papers, found in
-              <b>Publications</b>.
-            </li>
-          </ul>
-        </article>
-      </article>
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          Tutor and Mentor, The University of Melbourne
-        </h3>
-        <h4 class="employment-dates">Oct 2018 — Oct 2019</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <ul>
-            <li>
-              Held tutorial classes comprising of upwards of 15-30 students,
-              teaching Fluid Dynamics (MCEN90008).
-            </li>
-            <li>
-              Mentor for final year capstone students for blood flow research
-              projects, average H1 final year project.
-            </li>
-          </ul>
-        </article>
-      </article>
-
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          CFD Engineer, Defence Science and Technology Group
-        </h3>
-        <h4 class="employment-dates">Jul 2017 — Jan 2018</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <p>
-            Performed analysis of fluid flow for various blockage ratios for
-            studies on future submarines, for the following published piece:
-          </p>
-          <ul>
-            <li>
-              "Some new characteristics of the confined flow over circular
-              cylinders at low Reynolds numbers".
-            </li>
-          </ul>
-        </article>
-      </article>
     </section>
 
     <section id="section-education">
