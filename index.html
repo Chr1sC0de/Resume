@@ -18,7 +18,6 @@
         <a href="https://chr1sc0de.github.io/Resume/"> Digital Resume</a>
       </h4>
     </section>
-
     <section id="section-profile" style="grid-template-columns: 18fr 82fr">
       <header id="header-profile">
         <h2>Profile</h2>
@@ -39,7 +38,6 @@
       <header id="header-employment-history">
         <h2>Employment</h2>
       </header>
-
       <article class="employment">
         <h3 class="employment-title">Data Analyst, Origin Energy</h3>
         <h4 class="employment-dates">December 2023 - Current</h4>
@@ -51,34 +49,28 @@
             <ul>
               <li>
                 Automated the integration of Salesforce, SAP and IVMS data to
-                on-prem databases via scheduled python scripts.
+                Redshift on AWS via scheduled Matillion jobs.
               </li>
               <li>
-                As a result of the the integration process, uplift the
-                reconciliation of LPG stock from excel to sql queries, reducing
-                monthly reporting time by several hours.
+                Implemented a `hacky` dagster pipeline locally to allow for ad
+                hoc reporting automation.
               </li>
-            </ul>
-            <li><b>Exception Reporting</b></li>
-            <ul>
               <li>
-                Implemented automated testing strategies on windows server,
-                which generated automated exception reports which monitored data
-                quality
+                Developed models for tracking the lineage of gas flow through
+                the various Origin LPG terminal sites
               </li>
             </ul>
-
             <li><b>Asset Performance</b></li>
             <ul>
               <li>
-                Implemented ETL pipelines for data required for tracking asset
-                utilization KPI's. Identified underutilized assets.
+                Developed dashboards combining Salesforce with IVMS data to
+                track the performance of trucks i.e. delivery to time on-road,
+                wait time etc.
               </li>
             </ul>
           </ul>
         </article>
       </article>
-
       <article class="employment">
         <h3 class="employment-title">
           Junior Market Analyst, Energy Australia
@@ -93,12 +85,9 @@
             </li>
             <ul>
               <li>
-                Developed a PySpark based cloud ETL pipeline which extracted
-                Plexos forecasts into Databricks Delta tables.
-              </li>
-              <li>
-                Reduced trader analysis time by over 8 hours through the
-                optimized extraction pipeline.
+                Developed a PySpark based cloud ETL pipeline, extracting Plexos
+                forecasts into Databricks Delta tables reducing trader analysis
+                time by over 8 hours.
               </li>
               <li>
                 Leveraged Apache Airflow for orchestrating on-prem to cloud
@@ -111,11 +100,6 @@
                 Enhanced monitoring through logging and alerts via New Relic.
               </li>
               <li>
-                Facilitated the migration of data from on-premises databases to
-                the cloud, enabling real-time data access for traders and aiding
-                in view development.
-              </li>
-              <li>
                 Utilized Terraform and Azure Pipelines for automated testing and
                 deployment of infrastructure and code across multiple
                 environments (Dev/Test/Prod).
@@ -126,7 +110,8 @@
               </li>
               <li>
                 Automated testing, code coverage, and security reporting using
-                SonarQube to maintain high code quality and security standards.
+                pytest and SonarQube to maintain high code quality and security
+                standards.
               </li>
             </ul>
 
@@ -151,33 +136,6 @@
             </ul>
 
             <li>
-              <b>Cloud Data Program Continuation:</b>
-            </li>
-            <ul>
-              <li>
-                Consistently executed automated Business Verification Testing
-                (BVT) using a custom-developed testing framework during a
-                mission-critical, large-scale "lift and shift" operation.
-              </li>
-              <li>
-                Ensured the accuracy and reliability of data throughout the
-                migration process, thereby mitigating risks and ensuring
-                business continuity.
-              </li>
-            </ul>
-          </ul>
-        </article>
-      </article>
-
-      <article class="employment">
-        <h3 class="employment-title">Energy Graduate, Energy Australia</h3>
-        <h4 class="employment-dates">June 2022 - March 2023</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <p>Team: Pricing Analysis and Systems</p>
-
-          <ul>
-            <li>
               <b> AEMO Market Compensation Analysis:</b>
               <ul>
                 <li>
@@ -192,16 +150,14 @@
               <b>Cloud Data Program:</b>
               <ul>
                 <li>
-                  Verified accuracy and quality of critical business tables
-                  through UAT during migration from on-premise Oracle and
-                  Microsoft servers to Databricks on AWS.
+                  Consistently executed automated Business Verification Testing
+                  (BVT) using a custom-developed testing framework during a
+                  mission-critical, large-scale "lift and shift" operation.
                 </li>
                 <li>
-                  Designed a semi-automated Python-based UAT framework whic
-                  streamlined SQL query reuse across the various stages of
-                  testing, and enabled the creation of reproducible
-                  documentation for each test case, saving up to an hour of
-                  retesting time per table for hundreds of tables.
+                  Ensured the accuracy and reliability of data throughout the
+                  migration process, thereby mitigating risks and ensuring
+                  business continuity.
                 </li>
               </ul>
             </li>
@@ -240,6 +196,37 @@
           </ul>
         </article>
       </article>
+      <article class="employment">
+        <!-- I have used the order property to ensure the correct grid
+                positions -->
+        <h3 class="employment-title">
+          Research Assistant, The University of Melbourne
+        </h3>
+        <h4 class="employment-dates">Jan 2018 — Jan 2021</h4>
+        <h4 class="employment-location">Melbourne</h4>
+        <article class="employment-description">
+          <p>Teams: Blood Flow and Deep Learning</p>
+          <ul>
+            <li>
+              Developed and documented scientific code for research application
+              in C++ and Python for numerical modeling, data visualization and
+              statistical analysis for publications.
+            </li>
+            <li>
+              Implemented Computational Fluid Dynamics simulations using high
+              performance computing systems.
+            </li>
+            <li>
+              Trailed the application of Convolutional Neural Networks for the
+              automation of OCT image segmentation and shear stress prediction.
+            </li>
+            <li>
+              Co-author for peer reviewed journal papers, found in
+              <b>Publications</b>.
+            </li>
+          </ul>
+        </article>
+      </article>
     </section>
   </page>
 
@@ -253,71 +240,6 @@
       "
     >
       <!-- start listing employment, replace with js when learned -->
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          Research Assistant, The University of Melbourne
-        </h3>
-        <h4 class="employment-dates">Jan 2018 — Jan 2021</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <ul>
-            <li>
-              Developed and documented scientific code for research application
-              in C++ and Python for numerical modeling, data visualization and
-              statistical analysis for publications.
-            </li>
-            <li>
-              Co-author for peer reviewed journal papers, found in
-              <b>Publications</b>.
-            </li>
-          </ul>
-        </article>
-      </article>
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          Tutor and Mentor, The University of Melbourne
-        </h3>
-        <h4 class="employment-dates">Oct 2018 — Oct 2019</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <ul>
-            <li>
-              Held tutorial classes comprising of upwards of 15-30 students,
-              teaching Fluid Dynamics (MCEN90008).
-            </li>
-            <li>
-              Mentor for final year capstone students for blood flow research
-              projects, average H1 final year project.
-            </li>
-          </ul>
-        </article>
-      </article>
-
-      <article class="employment">
-        <!-- I have used the order property to ensure the correct grid
-                positions -->
-        <h3 class="employment-title">
-          CFD Engineer, Defence Science and Technology Group
-        </h3>
-        <h4 class="employment-dates">Jul 2017 — Jan 2018</h4>
-        <h4 class="employment-location">Melbourne</h4>
-        <article class="employment-description">
-          <p>
-            Performed analysis of fluid flow for various blockage ratios for
-            studies on future submarines, for the following published piece:
-          </p>
-          <ul>
-            <li>
-              "Some new characteristics of the confined flow over circular
-              cylinders at low Reynolds numbers".
-            </li>
-          </ul>
-        </article>
-      </article>
     </section>
 
     <section id="section-education">
