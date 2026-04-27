@@ -1,9 +1,9 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage[a4paper,margin=1.25cm]{geometry}
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{parskip}
@@ -23,19 +23,19 @@
 \definecolor{mutedtext}{HTML}{5D6970}
 
 \setlength{\parindent}{0pt}
-\setlist[itemize]{nosep,leftmargin=1.4em,topsep=0.25em}
+\setlist[itemize]{nosep,leftmargin=1.25em,topsep=0.15em,itemsep=0.05em}
 \renewcommand{\familydefault}{\sfdefault}
 
 \titleformat{\section}
-  {\large\bfseries\color{sectionslate}}
+  {\normalsize\bfseries\color{sectionslate}}
   {}
   {0pt}
   {\MakeUppercase}
-  [\vspace{0.15em}{\color{sectionslate}\titlerule}]
-\titlespacing*{\section}{0pt}{1.2em}{0.65em}
+  [\vspace{0.08em}{\color{sectionslate}\titlerule}]
+\titlespacing*{\section}{0pt}{0.85em}{0.45em}
 
 \newcommand{\resumeheader}[4]{
-  {\Huge\textbf{\textcolor{textdark}{#1}}}\par
+  {\huge\textbf{\textcolor{textdark}{#1}}}\par
   \textcolor{mutedtext}{#2 \textbar\ #3 \textbar\ \href{mailto:#4}{#4}}\par
   \textcolor{mutedtext}{\href{https://github.com/Chr1sC0de/}{github.com/Chr1sC0de}
   \textbar\
@@ -45,22 +45,22 @@
 \newcommand{\resumesection}[1]{\section*{#1}}
 
 \newenvironment{resumejob}[3]{
-  \par\addvspace{0.7em}
+  \par\addvspace{0.45em}
   \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.3\textwidth}@{}}
     \textbf{\textcolor{textdark}{#1}} & \textcolor{mutedtext}{#2} \\
     \multicolumn{2}{@{}l@{}}{\textit{\textcolor{mutedtext}{#3}}}
   \end{tabularx}
-  \vspace{-0.4em}
+  \vspace{-0.55em}
 }{
-  \par\addvspace{0.35em}
+  \par\addvspace{0.2em}
 }
 
 \newcommand{\resumeproject}[2]{
-  \par\addvspace{0.35em}
+  \par\addvspace{0.2em}
   \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.36\textwidth}@{}}
     \textbf{\textcolor{textdark}{#1}} & #2
   \end{tabularx}
-  \vspace{-0.45em}
+  \vspace{-0.55em}
 }
 
 \begin{document}
@@ -74,8 +74,8 @@ Data scientist and backend-focused Python developer with experience building and
 \resumeproject{Energy Market Delta Lake (Proof of Concept)}{\href{https://github.com/Chr1sC0de/energy-market-delta-lake}{GitHub} \textbar\ \href{https://ausenergymarketdata.com/dagster-webserver/guest}{Dagster Guest Demo}}
 \begin{itemize}
   \item Built a Python, AWS, and Dagster proof of concept for ingesting, orchestrating, cleansing, and serving Australian energy market data through an event-driven ETL and lakehouse architecture.
-  \item Designed and deployed a platform spanning more than 200 assets, S3-backed Delta tables, PostgreSQL metadata storage, DynamoDB locking, ECS-hosted services, and Pulumi-managed infrastructure as code.
-  \item Applied strong code quality and delivery practices through repository automation, testing, and Codex AI-assisted implementation across ETL patterns, deployment setup, and platform documentation.
+  \item Designed and deployed 200+ assets across S3-backed Delta tables, PostgreSQL metadata, DynamoDB locking, ECS services, and Pulumi-managed infrastructure as code.
+  \item Applied code quality automation, testing, and Codex AI-assisted implementation across ETL patterns, deployment setup, and platform documentation.
 \end{itemize}
 
 \resumesection{Employment}
@@ -83,24 +83,24 @@ Data scientist and backend-focused Python developer with experience building and
 \begin{resumejob}{Data Scientist, AEMO}{Nov 2025 -- Current}{Melbourne}
 Teams: NEM Operational Forecasting
 \begin{itemize}
-  \item Refactored and enhanced a Python-based Dagster ETL on Windows supporting around 50 assets for NEM operations, improving maintainability and reliability across high-frequency backend workloads.
-  \item Maintained R script ETL alongside Python script and Podman-containerized jobs, with Dagster coordinating mixed execution patterns across operational forecasting workflows.
-  \item Reduced failure rates in batch jobs running every minute by fixing networking and implementation issues, and migrated the Dagster backend from SQLite to Postgres to reduce job overlap and cross-run impact.
+  \item Refactored and enhanced a Python-based Dagster ETL on Windows supporting around 50 assets for NEM operations, improving reliability across high-frequency backend workloads.
+  \item Maintained R script ETL, Python scripts, and Podman-containerized jobs, with Dagster coordinating mixed execution patterns across operational forecasting workflows.
+  \item Reduced failure rates in minute-level batch jobs by fixing networking and implementation issues, and migrated Dagster metadata from SQLite to Postgres to reduce cross-run impact.
   \item Standardized backend implementation patterns through factory-based refactors, improving consistency and making new asset and pipeline development easier to extend.
-  \item Strengthened Azure DevOps CI/CD pipelines with Bash automation and code quality tooling including Ruff, Prek, Pytest, and Mypy, improving code quality and deployment reliability.
-  \item Designed and developed Pyinfra-based Dagster deployment, distributed Podman container deployment, and multi-repository gRPC deployment, helping move delivery from Windows Server hosting toward better-practice self-hosted Linux CI/CD and deployment workflows.
-  \item Performed quarterly retraining and production deployment of Frequency Uncertainty Models, and developed integration pipelines that fed BOM ensemble models into ML forecasting models.
+  \item Strengthened Azure DevOps CI/CD with Bash automation, Ruff, Prek, Pytest, and Mypy, improving code quality and deployment reliability.
+  \item Built Pyinfra-based Dagster deployment, distributed Podman deployment, and multi-repository gRPC deployment, moving delivery from Windows Server toward self-hosted Linux CI/CD.
+  \item Performed quarterly retraining and production deployment of Frequency Uncertainty Models, and fed BOM ensemble model data into ML forecasting pipelines.
 \end{itemize}
 \end{resumejob}
 
 \begin{resumejob}{Gas Market Analyst, AEMO}{Nov 2024 -- Oct 2025}{Melbourne}
 Teams: Gas Market Real-Time Operations
 \begin{itemize}
-  \item \textbf{Reporting}: Maintained and enhanced a VBA macro-enabled reporting tool for weekly market insights and rotated weekly analysis delivery.
+  \item \textbf{Reporting}: Maintained a VBA reporting tool for weekly market insights and rotated analysis delivery.
   \item \textbf{Process Automation}
   \begin{itemize}
-    \item Automated extraction and validation of monthly data uploads to the AER and AEMO public website using Python, saving about two hours per report and reducing peer-review effort.
-    \item Streamlined gas dataset quality assurance using Python and Marimo notebooks, accelerating validation for Quarterly Energy Dynamics reporting.
+    \item Automated extraction and validation of monthly AER and AEMO public data uploads using Python, saving about two hours per report.
+    \item Streamlined gas dataset QA with Python and Marimo notebooks, accelerating Quarterly Energy Dynamics validation.
   \end{itemize}
   \item \textbf{Operations Dashboards}
   \begin{itemize}
@@ -108,9 +108,9 @@ Teams: Gas Market Real-Time Operations
   \end{itemize}
   \item \textbf{Operating System Lifecycle Testing}
   \begin{itemize}
-    \item Conducted testing for application server upgrades from Microsoft SQL Server 2017 to 2022.
+    \item Tested application server upgrades from Microsoft SQL Server 2017 to 2022.
     \item Automated stored procedure validation with Pytest to ensure UAT outputs matched production results.
-    \item Coordinated integration testing with cross-functional teams to ensure deployment completeness and reliability.
+    \item Coordinated integration testing with cross-functional teams.
   \end{itemize}
 \end{itemize}
 \end{resumejob}
@@ -118,12 +118,12 @@ Teams: Gas Market Real-Time Operations
 \begin{resumejob}{Data \& Performance Analyst, Origin Energy}{Nov 2023 -- Nov 2024}{Melbourne}
 Teams: LPG Data Systems \& Performance
 \begin{itemize}
-  \item \textbf{Documentation and Collaboration}: Documented requirements and processes in Confluence, collaborated through Asana, and worked in a GitOps-enabled Agile dashboard team.
+  \item \textbf{Documentation and Collaboration}: Documented requirements in Confluence, collaborated through Asana, and worked in a GitOps-enabled Agile dashboard team.
   \item \textbf{Stock Reconciliation}
   \begin{itemize}
     \item Automated Salesforce, SAP, and IVMS integration into Redshift with scheduled Matillion jobs.
-    \item Built a local Dagster-style pipeline connecting RoutePlanner, SharePoint, SGFleet, IVMS, SAP, Salesforce, and Outlook to support ad hoc reporting during an integration uplift.
-    \item Led requirements gathering, workshops, data-model identification, ETL oversight, and dashboard delivery for LPG stock reconciliation.
+    \item Built a local Dagster-style pipeline connecting RoutePlanner, SharePoint, SGFleet, IVMS, SAP, Salesforce, and Outlook during an integration uplift.
+    \item Led requirements, data-model identification, ETL oversight, and dashboard delivery for LPG stock reconciliation.
   \end{itemize}
   \item \textbf{Asset Performance}
   \begin{itemize}
@@ -200,7 +200,7 @@ Codex & Dagster & Data Analysis and Cleansing & DAX \\
 Excel VBA & M & MATLAB & Microsoft Power BI \\
 Microsoft Power Query & OpenFOAM & Paraview & Podman \\
 Powershell & Pyinfra & Python & R \\
-RDBMS: Postgres, Oracle, MSSQL & SolidWorks & Tableau & Terraform \\
+Postgres, Oracle, MSSQL & SolidWorks & Tableau & Terraform \\
 \end{tabularx}
 
 \end{document}
