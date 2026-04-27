@@ -1,0 +1,21 @@
+repos:
+  - repo: local
+    hooks:
+      - id: build-resume-html
+        name: Build resume HTML from LaTeX
+        entry: python3 scripts/build_resume.py html
+        language: system
+        files: ^(src/resume\.tex|src/resume\.css)$
+        pass_filenames: false
+      - id: build-resume-pdf
+        name: Compile resume PDF from LaTeX
+        entry: python3 scripts/build_resume.py pdf
+        language: system
+        files: ^src/resume\.tex$
+        pass_filenames: false
+      - id: validate-generated-html
+        name: Validate generated resume HTML
+        entry: python3 scripts/validate_resume_html.py
+        language: system
+        files: ^(index\.html|resume\.css|src/resume\.tex|src/resume\.css)$
+        pass_filenames: false
