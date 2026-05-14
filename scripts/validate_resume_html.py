@@ -57,6 +57,8 @@ def main() -> int:
         failures.append("Generated HTML is not linked to resume.css.")
     if not any(link.startswith("https://github.com/Chr1sC0de") for link in parser.links):
         failures.append("Expected GitHub profile link is missing.")
+    if "platform-resume.pdf" not in parser.links:
+        failures.append("Expected one-page platform resume PDF link is missing.")
     if "Chris Mamon" not in html:
         failures.append("Expected resume owner name is missing.")
 

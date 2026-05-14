@@ -16,10 +16,12 @@ BUILD_DIR = ROOT / "build"
 PDF_DIR = BUILD_DIR / "pdf"
 HTML_DIR = BUILD_DIR / "html"
 TEXMF_DIR = BUILD_DIR / ".texmf-var"
-SOURCE_TEX = SRC_DIR / "resume.tex"
+FULL_SOURCE_TEX = SRC_DIR / "resume-full.tex"
+PLATFORM_SOURCE_TEX = SRC_DIR / "resume-platform.tex"
 SOURCE_CSS = SRC_DIR / "resume.css"
 OUTPUT_HTML = ROOT / "index.html"
 OUTPUT_CSS = ROOT / "resume.css"
+OUTPUT_PLATFORM_PDF = ROOT / "platform-resume.pdf"
 
 
 def run(cmd: list[str], cwd: Path | None = None) -> None:
@@ -38,7 +40,7 @@ def ensure_commands(*commands: str) -> None:
         raise SystemExit(f"Missing required command(s): {missing_list}")
 
 
-def build_pdf() -> None:
+def build_pdf_source(source_tex: Path) -> Path:
     ensure_commands("pdflatex")
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     command = [
@@ -46,16 +48,30 @@ def build_pdf() -> None:
         "-interaction=nonstopmode",
         "-halt-on-error",
         f"-output-directory={PDF_DIR}",
-        str(SOURCE_TEX),
+        str(source_tex),
     ]
     run(command)
     run(command)
+    output_pdf = PDF_DIR / f"{source_tex.stem}.pdf"
+    if not output_pdf.exists():
+        raise SystemExit(f"Expected generated PDF at {output_pdf}")
+    return output_pdf
+
+
+def build_pdf() -> None:
+    build_pdf_source(FULL_SOURCE_TEX)
+    platform_pdf = build_pdf_source(PLATFORM_SOURCE_TEX)
+    shutil.copy2(platform_pdf, OUTPUT_PLATFORM_PDF)
 
 
 def normalize_html(raw_html: str) -> str:
     normalized = raw_html.replace("<!-- l. ", "<!-- line ")
     normalized = normalized.replace(
-        "<title></title>", "<title>Chris Mamon Resume</title>"
+        "<title></title>", "<title>Chris Mamon Technical CV</title>"
+    )
+    normalized = normalized.replace(
+        "content='resume.tex' name='src'",
+        "content='src/resume-full.tex' name='src'",
     )
     if '<meta name="viewport"' not in normalized:
         normalized = normalized.replace(
@@ -74,8 +90,10 @@ def build_html() -> None:
 
     with tempfile.TemporaryDirectory(dir=BUILD_DIR) as tmp_dir:
         tmp_path = Path(tmp_dir)
-        staged_source = tmp_path / SOURCE_TEX.name
-        staged_source.write_text(SOURCE_TEX.read_text(encoding="utf-8"), encoding="utf-8")
+        staged_source = tmp_path / "resume.tex"
+        staged_source.write_text(
+            FULL_SOURCE_TEX.read_text(encoding="utf-8"), encoding="utf-8"
+        )
         run(
             [
                 "make4ht",

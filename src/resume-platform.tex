@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1.02cm]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[
+  colorlinks=true,
+  urlcolor=linkred,
+  linkcolor=linkred,
+  citecolor=linkred
+]{hyperref}
+
+\definecolor{linkred}{HTML}{8F2D1C}
+\definecolor{sectionslate}{HTML}{4F6673}
+\definecolor{textdark}{HTML}{201B17}
+\definecolor{mutedtext}{HTML}{5D6970}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.18em}
+\setlist[itemize]{nosep,leftmargin=1.15em,topsep=0.08em,itemsep=0.02em}
+\renewcommand{\familydefault}{\sfdefault}
+
+\titleformat{\section}
+  {\small\bfseries\color{sectionslate}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\vspace{0.05em}{\color{sectionslate}\titlerule}]
+\titlespacing*{\section}{0pt}{0.48em}{0.25em}
+
+\newcommand{\resumeheader}[4]{
+  {\LARGE\textbf{\textcolor{textdark}{#1}}}\par
+  \textcolor{mutedtext}{#2 \textbar\ #3 \textbar\ \href{mailto:#4}{#4}}\par
+  \textcolor{mutedtext}{\href{https://github.com/Chr1sC0de/}{github.com/Chr1sC0de}
+  \textbar\
+  \href{https://chr1sc0de.github.io/Resume/}{Technical CV}
+  \textbar\
+  \href{https://github.com/Chr1sC0de/energy-market-delta-lake}{Energy Market Delta Lake}}\par
+}
+
+\newcommand{\resumesection}[1]{\section*{#1}}
+
+\newenvironment{resumejob}[3]{
+  \par\addvspace{0.28em}
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.28\textwidth}@{}}
+    \textbf{\textcolor{textdark}{#1}} & \textcolor{mutedtext}{#2} \\
+    \multicolumn{2}{@{}l@{}}{\textit{\textcolor{mutedtext}{#3}}}
+  \end{tabularx}
+  \vspace{-0.62em}
+}{
+  \par\addvspace{0.06em}
+}
+
+\newcommand{\resumeproject}[2]{
+  \par\addvspace{0.12em}
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\textwidth}@{}}
+    \textbf{\textcolor{textdark}{#1}} & #2
+  \end{tabularx}
+  \vspace{-0.62em}
+}
+
+\begin{document}
+\fontsize{9.25}{10.15}\selectfont
+
+\resumeheader{Chris Mamon}{ML Platform Engineer \textbar\ Melbourne, Australia}{+61 413 016 929}{chrisam1993@live.com}
+
+\resumesection{Profile}
+Python platform engineer focused on ML and data-platform reliability, with experience building Dagster, AWS, and containerized systems for operational forecasting, model retraining, lakehouse pipelines, CI/CD, and developer workflows.
+
+\resumesection{Selected Platform Project}
+\resumeproject{Energy Market Delta Lake (AWS/Dagster Proof of Concept)}{\href{https://ausenergymarketdata.com/dagster-webserver/guest}{Demo} \textbar\ \href{https://github.com/Chr1sC0de/energy-market-delta-lake}{GitHub}}
+\begin{itemize}
+  \item Built a public AWS/Dagster lakehouse for Australian energy data using Pulumi, VPC/IAM/ECR/ECS, S3 Delta/Parquet storage, DynamoDB Delta locking, Postgres metadata, Caddy/auth, and Marimo dashboards.
+  \item Implemented 200+ assets and checks across scheduled discovery, event-driven ingestion, bronze Delta tables, source-specific silver snapshots, gas-model marts, sensors, schedules, and maintenance jobs.
+  \item Added Podman/LocalStack local parity, cached archive seeds, Dagster GraphQL e2e launches, dependency-wave asset batches, asset-check monitoring, and regression budgets.
+\end{itemize}
+
+\resumesection{Platform Experience}
+\begin{resumejob}{Data Scientist, AEMO}{Nov 2025 -- Present}{NEM Operational Forecasting}
+\begin{itemize}
+  \item Refactored and operated a Python/Dagster ETL with around 50 assets for high-frequency operational forecasting workloads.
+  \item Stabilized minute-level batch jobs by fixing networking/runtime issues and migrating Dagster metadata from SQLite to Postgres.
+  \item Built Pyinfra, Podman, and multi-repository gRPC deployment patterns to move delivery toward self-hosted Linux CI/CD.
+  \item Strengthened Azure DevOps quality gates with Bash, Ruff, Prek, Pytest, Mypy, and reusable asset factory patterns.
+  \item Retrained and deployed Frequency Uncertainty Models; fed BOM ensemble data into ML forecasting pipelines.
+\end{itemize}
+\end{resumejob}
+
+\begin{resumejob}{Market Analyst \& Analytics Developer, Energy Australia}{Jun 2022 -- Nov 2023}{Trading Data \& Systems}
+\begin{itemize}
+  \item Built a PySpark, Airflow, and Databricks Delta ingestion pipeline for Plexos forecasts, reducing trader analysis time by more than eight hours.
+  \item Added S3-triggered ingestion, New Relic logging and alerts, Terraform, Azure Pipelines, Python package deployment, automated tests, coverage, and SonarQube reporting.
+  \item Implemented hedging position logic in Databricks and scheduled Airflow DAGs across accounts.
+\end{itemize}
+\end{resumejob}
+
+\begin{resumejob}{Earlier Platform and Analytics Roles}{2018 -- 2025}{AEMO Gas, Origin Energy, University of Melbourne}
+\begin{itemize}
+  \item Automated AEMO/AER data validation, SQL Server upgrade checks, Redshift integrations, and Marimo QA notebooks; used Pytest to compare UAT and production stored procedure outputs.
+  \item Delivered Salesforce, SAP, IVMS, and telemetry analytics that supported LPG stock reconciliation and about \$500,000 in asset-use savings.
+  \item Developed C++/Python scientific computing code on HPC systems and trialed CNNs for OCT image segmentation and shear stress prediction.
+\end{itemize}
+\end{resumejob}
+
+\resumesection{Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{textdark}}lX@{}}
+Platform/cloud & AWS, Pulumi, Terraform, ECS/Fargate, ECR, IAM, VPC, S3, DynamoDB, Postgres, LocalStack \\
+MLOps/data & Dagster, Airflow, Databricks, Delta Lake, PySpark, Polars, Pandas, model retraining and deployment \\
+DevEx/quality & Python, uv, Pytest, Ruff, Prek, Mypy, Zuban, Bash, Azure DevOps, CI/CD, GitHub, Codex \\
+Containers & Podman, Docker-compatible workflows, Linux services, Pyinfra, Caddy, FastAPI \\
+\end{tabularx}
+
+\resumesection{Education}
+\textbf{Masters of Engineering (With Distinction), The University of Melbourne}\hfill 2015 -- 2017\par
+\textbf{Bachelor of Science, The University of Melbourne}\hfill 2012 -- 2014
+
+\end{document}
